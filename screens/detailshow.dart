@@ -1,0 +1,59 @@
+import 'package:app_news/forms/navdrawer.dart';
+import 'package:app_news/model/newsapimodel.dart';
+import 'package:flutter/material.dart';
+
+class DetailNews extends StatelessWidget {
+  final NewsApiModel model;
+
+  const DetailNews({required this.model, Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.black26,
+          title: const Text('Details Page'),
+        ),
+        drawer: const NavDrawer(),
+        body: SizedBox(
+            width: double.infinity,
+            height: double.infinity,
+            child: SingleChildScrollView(
+              child: Column(children: <Widget>[
+                Container(
+                  child: model.imageUrl != ""
+                      ? Image.network(
+                          model.imageUrl,
+                          fit: BoxFit.cover,
+                        )
+                      : const Text("Cant Load image"),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Center(
+                  child: Text(
+                    model.title,
+                    style: const TextStyle(fontSize: 30.0),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Text(
+                  model.description,
+                  style: const TextStyle(
+                      fontSize: 20.0, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Text(
+                  model.content,
+                  style: const TextStyle(
+                      fontSize: 20.0, fontWeight: FontWeight.bold),
+                ),
+              ]),
+            )));
+  }
+}
