@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "338943055285",
+    "project_id": "appnews-212bb",
+    "storage_bucket": "appnews-212bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338943055285:android:8397b903c01234198435fc",
+        "android_client_info": {
+          "package_name": "com.example.app_news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338943055285-su2da0d4ap95b162pom2egc2lvjvdf7c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.app_news",
+            "certificate_hash": "bc9f9a8f3366379177432ec3b94310b9b09af2d0"
+          }
+        },
+        {
+          "client_id": "338943055285-ogaksplclgo3lmt98p3rmlmnl6r7sj2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUi1HlPnln8Sw69NFEKeNWyH1vaReiJHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338943055285-ogaksplclgo3lmt98p3rmlmnl6r7sj2v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "338943055285-v35du4cicgqef71vq7q7h8sm8lc5k5gb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.appNews"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
